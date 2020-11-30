@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Website_Viktor Meeussen</title>  
+<style>
+    body{
+        font-family:monospace;
+        background-color:#727F92;
+    }
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    #div-box-bovenaan{
+        background-color:rgb(50 50 50);
+        font-size:20px;
+        font-weight:700;
+        border:3px solid white;
+        border-radius:5px;
+        padding: 10px 0px 10px 0px;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .link-box-bovenaan{
+        text-decoration:none;
+        color:white;
+        padding-left:415px;
+    }
+    #div-pagina{
+        background-color:whitesmoke;
+        margin: 60px 150px 100px 150px;
+    }
+    h1{
+        text-align:center;
+        padding-top:20px;
+        font-size:4em;
+        color:#727F92;
+    }
+     h2{
+        font-size:2.5em;
+        text-align:center;
+        border-bottom: 6px solid #727F92;
+        padding-bottom:20px;
+    }
+
+    #vlag_Kroatië{
+        border-bottom: 25px solid blue;
+        border-top: 25px solid red;
+        border-left: 25px solid white;
+        border-right: 25px solid white;
+        margin-top:20px;
+    }
+    #foto-hand{
+        position: absolute;
+        margin:200px 0px 0px 770px;
+    }
+    a:hover{
+        color:darkred;
+    }
+    a:active{
+        color:blue;
+    }
+    /*gordijn afbeelding*/
+    .container {
+        position: relative;
+        width: 50%;
+        margin-left: 390px;
+    }
+    .image {
+        width: 100%;
+        height: auto;
+        border-radius:15px;
+        display: block;
+    }
+    .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: #727F92;
+        overflow: hidden;
+        width: 100%;
+        height:0;
+        transition: .5s ease;
+        border-radius:15px;
+    }
+    .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    <!--foto galerij-->
+    * {
+        box-sizing: border-box;
+    }   
+    .rij {   
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 4px;
+    }
+    .kolom {
+        flex: 25%;
+        max-width: 32%;
+        padding: 0px 4px;
+    }
+    .kolom img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+        border-radius:5px;
+    }
+    #foto-galerij{
+        margin:50px 0px 0px 400px;
+        padding-bottom: 50px;
+    }
+</style>
+</head>
+<body>
+    <div id="div-box-bovenaan">
+        <a href="index.html" class="link-box-bovenaan">start</a>
+        <a href="fotos.html" class="link-box-bovenaan">foto's</a>
+        <a href="magic.html" class="link-box-bovenaan">magic</a>
+    </div>
+    <div id="div-pagina">
+        <h1>Kroatië</h1>
+        <h2>Foto's</h2>
+    <!--foto met hover-overlay-->
+        <div class="container">
+            <img src="foto's/foto6.JPG" alt="Avatar" class="image">
+            <div class="overlay">
+            <div class="text">Vakantie in Kroatië</div>
+        </div>
+        </div>
+        <img src="foto's/meme.webp" width="150" alt="Als je blind bent ga je deze niet begrijpen" class="center" id="foto-hand"> 
+        <img src="foto's/Kroatie%CC%88-vlag.jpg" width="600" alt="vlag Kroatië" id="vlag_Kroatië" class="center">
+    <!--foto-galerij-->
+        <div id="foto-galerij">
+            <div class="rij"> 
+                <div class="kolom">
+                    <img src="foto's/foto1.JPG" style="width:100%" alt="Viktor bij een zee">
+                    <img src="foto's/foto2.JPG" style="width:100%" alt="Viktor bij rotsen/rivier">
+                </div>
+                <div class="kolom">
+                    <img src="foto's/foto3.JPG" style="width:100%" alt="Viktor bij rotsen">
+                    <img src="foto's/foto4.JPG" style="width:100%" alt="viktor op een soort strand">
+                </div>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
