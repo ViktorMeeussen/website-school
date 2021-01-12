@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <!--Ctrl+alt+i    inspector-->
+    <a-scene>
+        <a-sky color="#20BEC5"></a-sky>
+        <!--huis 1 met klein tuintje-->
+        <a-entity  position="-8 0 0">
+            <!--grond-->
+            <a-plane position="8 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" data-brackets-id="76" geometry="width: 1; height: 2" material="color: #a1a1a1" id="pad"></a-plane>
+            <a-plane position="6.5 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" data-brackets-id="77" geometry="width: 2; height: 2" material="color: #41956e" id="gras"></a-plane>
+            <a-plane position="9.5 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" data-brackets-id="77" geometry="width: 2; height: 2" material="color: #41956e" id="gras-2"></a-plane>
+            <a-plane data-brackets-id="127" position="5.75 0 -6.75" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" geometry="width: 0.5; height: 3.5" material="color: #41956e" id="gras-3"></a-plane>
+            <a-plane data-brackets-id="127" position="10.25 0 -6.75" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" geometry="width: 0.5; height: 3.5" material="color: #41956e" id="gras-4"></a-plane>        
+            <!--huis-->
+            <a-box data-brackets-id="130" position="8 1 -6.75" src="BE.jpg" geometry="depth: 3.5; height: 2; width: 4" id="huis"></a-box>
+            <a-box data-brackets-id="247" position="8 0.75 -5"  src="deur.png" geometry="depth: 0.1; height: 1.5" id="deur"></a-box>
+            <a-box data-brackets-id="387" position="6.80393 1.10415 -4.9958" src="raam.png" geometry="depth: 0.03; height: 0.8; width: 0.8" id="raam"></a-box>
+            <a-box data-brackets-id="458" position="6.91284 2.66 -6.69" rotation="0 -0.01 -57.00000000000001" color="#4CC3D9" material="color: #44210e" geometry="depth: 3.9; width: 0.125; height: 2.65" id="dak"></a-box>
+            <a-box data-brackets-id="504" position="9.06972 2.66 -6.69022" rotation="0 0 57.00000000000001" color="#4CC3D9" material="color: #44210e" geometry="depth: 3.9; width: 0.125; height: 2.65" id="dak-2"></a-box>
+            <a-triangle color="#CCC" vertex-c="1 -1 0"  geometry="primitive: cone" position="8 2.63953 -4.99458" scale="1.98 1.28 0.00001" src="BE.jpg" id="dak-3"></a-triangle>
+            <a-triangle color="#CCC" vertex-c="1 -1 0"  geometry="primitive: cone" position="8 2.63953 -8.49696" scale="1.98 1.28 0.00001" src="BE.jpg" id="dak-4"></a-triangle>
+            <!--decoratie-->
+            <a-cylinder data-brackets-id="393" position="9 0.5 -4.7" radius="0.5" height="1.5" color="#FFC65D" material="color: #2f6d22" geometry="radius: 0.3; height: 1" id="struik-2"></a-cylinder>
+            <a-cylinder data-brackets-id="393" position="9.65268 0.5 -4.7" radius="0.5" height="1.5" color="#FFC65D" material="color: #2f6d22" geometry="radius: 0.3; height: 1" id="struik"></a-cylinder>
+            <a-text data-brackets-id="725" postition="5.760 0.485 -3.924" value="Viktor Meeussen" text="" id="naam"></a-text>
+        </a-entity>
+        <!--huis 2 met klein tuintje-->
+        <a-entity id="object-huis-2" position="-13 0 0">
+            <!--grond-->
+            <a-plane position="8 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" data-brackets-id="76" geometry="width: 1; height: 2" material="color: #a1a1a1" id="pad"></a-plane>
+            <a-plane position="6.5 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" data-brackets-id="77" geometry="width: 2; height: 2" material="color: #41956e" id="gras"></a-plane>
+            <a-plane position="9.5 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" data-brackets-id="77" geometry="width: 2; height: 2" material="color: #41956e" id="gras-2"></a-plane>
+            <a-plane data-brackets-id="127" position="5.75 0 -6.75" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" geometry="width: 0.5; height: 3.5" material="color: #41956e" id="gras-3"></a-plane>
+            <a-plane data-brackets-id="127" position="10.25 0 -6.75" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" geometry="width: 0.5; height: 3.5" material="color: #41956e" id="gras-4"></a-plane>        
+            <!--huis-->
+            <a-box data-brackets-id="130" position="8 1 -6.75" src="BE.jpg" geometry="depth: 3.5; height: 2; width: 4" id="huis"></a-box>
+            <a-box data-brackets-id="247" position="8 0.75 -5" rotation="" src="deur.png" geometry="depth: 0.1; height: 1.5" id="deur"></a-box>
+            <a-box data-brackets-id="387" position="6.80393 1.10415 -4.9958" src="raam.png" geometry="depth: 0.03; height: 0.8; width: 0.8" id="raam"></a-box>
+            <a-box data-brackets-id="458" position="6.91284 2.66 -6.69" rotation="0 -0.01 -57.00000000000001" color="#4CC3D9" material="color: #44210e" geometry="depth: 3.9; width: 0.125; height: 2.65" id="dak"></a-box>
+            <a-box data-brackets-id="504" position="9.06972 2.66 -6.69022" rotation="0 0 57.00000000000001" color="#4CC3D9" material="color: #44210e" geometry="depth: 3.9; width: 0.125; height: 2.65" id="dak-2"></a-box>
+            <a-triangle color="#CCC" vertex-c="1 -1 0"  geometry="primitive: cone" position="8 2.63953 -4.99458" scale="1.98 1.28 0.00001" src="BE.jpg" id="dak-3"></a-triangle>
+            <a-triangle color="#CCC" vertex-c="1 -1 0"  geometry="primitive: cone" position="8 2.63953 -8.49696" scale="1.98 1.28 0.00001" src="BE.jpg" id="dak-4"></a-triangle>
+            <!--decoratie-->
+            <a-cylinder data-brackets-id="393" position="9 0.5 -4.7" radius="0.5" height="1.5" color="#FFC65D" material="color: #2f6d22" geometry="radius: 0.3; height: 1" id="struik-2"></a-cylinder>
+            <a-cylinder data-brackets-id="393" position="9.65268 0.5 -4.7" radius="0.5" height="1.5" color="#FFC65D" material="color: #2f6d22" geometry="radius: 0.3; height: 1" id="struik"></a-cylinder>
+        </a-entity>
+    </a-scene>
+  </body>
+</html>
